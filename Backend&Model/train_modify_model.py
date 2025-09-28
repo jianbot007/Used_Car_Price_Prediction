@@ -32,6 +32,8 @@ df['odometer'] = df['odometer'].fillna(df['odometer'].median())
 for col in df.select_dtypes('object').columns:
     df[col] = df[col].fillna('missing')
 
+df = df.drop_duplicates()
+
 print("Missing values handled.")
 
 # ---------------------

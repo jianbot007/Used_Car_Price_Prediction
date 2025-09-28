@@ -5,7 +5,7 @@ import numpy as np
 # ---------------------
 # 1. Load Model and Encoders
 # ---------------------
-model = joblib.load("car_price_model.pkl")
+model = joblib.load("car_price_model_finetuned.pkl")
 le_dict = joblib.load("label_encoders.pkl")
 
 # ---------------------
